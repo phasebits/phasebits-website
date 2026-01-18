@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PhaseBits Inc. - Expert analog and mixed-signal design consultancy">
     <title>PhaseBits Inc. - Analog & Mixed-Signal Design Consultancy</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -72,6 +77,8 @@
             height: 70px;
             width: auto;
             object-fit: contain;
+            display: block;
+            visibility: visible;
         }
 
         .nav-menu {
@@ -544,6 +551,22 @@
             color: rgba(255, 255, 255, 0.7);
         }
 
+        /* Hide reCAPTCHA Badge */
+        .grecaptcha-badge {
+            visibility: hidden !important;
+            opacity: 0 !important;
+            position: absolute !important;
+            left: -9999px !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        
+        /* Hide reCAPTCHA badge iframe */
+        iframe[src*="recaptcha"] {
+            display: none !important;
+            visibility: hidden !important;
+        }
+
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -906,7 +929,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 PhaseBits Inc. All rights reserved.</p>
+                <p>&copy; 2026 PhaseBits Inc. All rights reserved.</p>
             </div>
         </div>
     </footer>
